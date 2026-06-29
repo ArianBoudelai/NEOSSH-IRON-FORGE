@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IRON//FORGE — Futuristic Bolts &amp; Nuts</title>
+<meta name="description" content="Cyberpunk bolts & nuts store by Mohammad Bodlaie. Precision fasteners for the future." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpolygon points='16,3 27,9.5 27,22.5 16,29 5,22.5 5,9.5' fill='none' stroke='%2300f0ff' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='5' fill='none' stroke='%23ff2bd6' stroke-width='2.5'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- Boot intro -->
+<div id="boot">
+  <div class="term">
+    <div class="line">&gt; INITIALIZING IRON//FORGE TERMINAL...</div>
+    <div class="line">&gt; LOADING FASTENER DATABASE ......... [OK]</div>
+    <div class="line">&gt; CALIBRATING TORQUE MATRIX ......... [OK]</div>
+    <div class="line">&gt; AUTH: MOHAMMAD BODLAIE ............ [VERIFIED]</div>
+    <div class="line">&gt; WELCOME TO THE FORGE <span class="cursor">█</span></div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html">IRON<span class="bolt">//</span>FORGE</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+      <a href="products.html" class="accent-cyan">Cart [<span id="cartCount">0</span>]</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="gear"><svg viewBox="0 0 100 100"><path fill="none" stroke="#00f0ff" stroke-width="2" d="M50 8l6 10 12-2 2 12 10 6-6 10 6 10-10 6-2 12-12-2-6 10-6-10-12 2-2-12-10-6 6-10-6-10 10-6 2-12 12 2z"/><circle cx="50" cy="50" r="14" fill="none" stroke="#ff2bd6" stroke-width="2"/></svg></div>
+    <div class="gear two"><svg viewBox="0 0 100 100"><path fill="none" stroke="#ff2bd6" stroke-width="2.5" d="M50 8l6 10 12-2 2 12 10 6-6 10 6 10-10 6-2 12-12-2-6 10-6-10-12 2-2-12-10-6 6-10-6-10 10-6 2-12 12 2z"/><circle cx="50" cy="50" r="14" fill="none" stroke="#00f0ff" stroke-width="2.5"/></svg></div>
+
+    <p class="tagline">// PRECISION FASTENERS FROM THE FUTURE</p>
+    <h1>
+      <span class="glitch" data-text="IRON//FORGE">IRON//FORGE</span>
+      <span class="sub">BOLTS &amp; NUTS</span>
+    </h1>
+    <p class="lead">
+      Every machine that ever changed the world was held together by bolts and nuts.
+      We forge the ones built for tomorrow — torque-rated, corrosion-proof, neon-grade.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="products.html">⚡ Browse Catalog</a>
+      <a class="btn ghost" href="#why">Learn More</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat"><div class="num" data-to="35" data-suffix="+">0</div><div class="label">Years Forging</div></div>
+      <div class="stat"><div class="num" data-to="1200" data-suffix="+">0</div><div class="label">Fastener Types</div></div>
+      <div class="stat"><div class="num" data-to="50000" data-suffix="+">0</div><div class="label">Orders Shipped</div></div>
+      <div class="stat"><div class="num" data-to="99.9" data-suffix="%">0</div><div class="label">Spec Accuracy</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured products -->
+<section class="section">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">// TOP OF THE RACK</div>
+      <h2>Featured <span class="bar">Hardware</span></h2>
+    </div>
+    <div class="grid" id="featuredGrid"></div>
+    <div class="center" style="margin-top:38px">
+      <a class="btn mag" href="products.html">View All 10 Products →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="section" id="why">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">// SYSTEM ADVANTAGES</div>
+      <h2>Why The <span class="bar">Forge</span></h2>
+    </div>
+    <div class="features">
+      <div class="feat"><div class="ico">🔩</div><h4>Mil-Spec Grade</h4><p>Grade 12.9 alloy steel and 304/316 stainless. Rated for the loads that matter.</p></div>
+      <div class="feat"><div class="ico">⚡</div><h4>Same-Day Dispatch</h4><p>Order before the cutoff and your hardware ships the same day from our local vault.</p></div>
+      <div class="feat"><div class="ico">🛡️</div><h4>Corrosion Armor</h4><p>Zinc, black-oxide and hot-dip galvanized coatings that outlast the weather.</p></div>
+      <div class="feat"><div class="ico">📐</div><h4>Exact Specs</h4><p>Every thread pitch and tolerance verified. What you order is what you torque.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Owner signature band -->
+<section class="section">
+  <div class="wrap">
+    <div class="owner">
+      <div class="kicker">// FORGED &amp; OWNED BY</div>
+      <div class="name"><span class="glitch" data-text="MOHAMMAD BODLAIE">MOHAMMAD BODLAIE</span></div>
+      <div class="role">Master Of Bolts · Founder · Iron//Forge</div>
+      <p class="lead" style="margin:24px auto 0">
+        “For over three decades I've matched the right fastener to the right job.
+        This shop is that knowledge — re-forged for a new century.”
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="col">
+      <h5>IRON//FORGE</h5>
+      <p>Futuristic bolts &amp; nuts for builders, makers and machines.</p>
+      <p>Open: Sat–Thu · 09:00 – 21:00</p>
+    </div>
+    <div class="col">
+      <h5>Catalog</h5>
+      <a href="products.html">All Products</a>
+      <a href="products.html">Bolts</a>
+      <a href="products.html">Nuts</a>
+      <a href="products.html">Kits &amp; Rods</a>
+    </div>
+    <div class="col">
+      <h5>Contact</h5>
+      <a href="tel:+0000000000">☎ +00 000 000 0000</a>
+      <a href="mailto:info@ironforge.shop">✉ info@ironforge.shop</a>
+      <p>Iron Bazaar · Unit 07</p>
+    </div>
+    <div class="credit">
+      © <span id="yr"></span> IRON//FORGE — Proudly run by <b>MOHAMMAD BODLAIE</b>. Built frontend-only.
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  renderProducts("featuredGrid", 4); // show first 4 on the homepage
+</script>
+</body>
+</html>
