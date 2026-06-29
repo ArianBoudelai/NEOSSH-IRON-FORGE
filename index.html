@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#04030c" />
 <title>IRON//FORGE — Futuristic Bolts &amp; Nuts</title>
 <meta name="description" content="Cyberpunk bolts & nuts store by Mohammad Bodlaie. Precision fasteners for the future." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +29,10 @@
 <header class="nav">
   <div class="wrap">
     <a class="logo" href="index.html">IRON<span class="bolt">//</span>FORGE</a>
-    <nav class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
       <a href="index.html" class="active">Home</a>
       <a href="products.html">Products</a>
       <a href="#why">Why Us</a>

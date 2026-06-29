@@ -133,8 +133,10 @@ function toast(msg) {
   setTimeout(() => t.remove(), 2800);
 }
 
-/* ---- Subtle 3D tilt on hover ------------------------------ */
+/* ---- Subtle 3D tilt on hover (skipped on touch devices) --- */
+const SUPPORTS_HOVER = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 function attachTilt(el) {
+  if (!SUPPORTS_HOVER) return; // avoid stuck transforms on phones/tablets
   const max = 6;
   el.addEventListener("mousemove", e => {
     const r = el.getBoundingClientRect();
@@ -143,6 +145,23 @@ function attachTilt(el) {
     el.style.transform = `translateY(-6px) rotateX(${(-py * max).toFixed(2)}deg) rotateY(${(px * max).toFixed(2)}deg)`;
   });
   el.addEventListener("mouseleave", () => { el.style.transform = ""; });
+}
+
+/* ---- Mobile hamburger nav --------------------------------- */
+function initNav() {
+  const toggle = document.getElementById("navToggle");
+  const links = document.getElementById("navLinks");
+  if (!toggle || !links) return;
+  const setOpen = open => {
+    links.classList.toggle("open", open);
+    toggle.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  };
+  toggle.addEventListener("click", () => setOpen(!links.classList.contains("open")));
+  // Close the menu after tapping a link.
+  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setOpen(false)));
+  // Close when resizing back up to desktop.
+  window.addEventListener("resize", () => { if (window.innerWidth > 760) setOpen(false); });
 }
 
 /* ---- Animated stat counters ------------------------------- */
@@ -189,6 +208,7 @@ function initBoot() {
 
 /* ---- Boot it all ------------------------------------------ */
 document.addEventListener("DOMContentLoaded", () => {
+  initNav();
   initBoot();
   initCounters();
   initFilters();

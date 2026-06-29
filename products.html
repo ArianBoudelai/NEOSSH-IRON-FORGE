@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#04030c" />
 <title>Products // IRON//FORGE</title>
 <meta name="description" content="Full catalog of cyberpunk bolts, nuts, washers, rods and kits — Iron//Forge by Mohammad Bodlaie." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +18,10 @@
 <header class="nav">
   <div class="wrap">
     <a class="logo" href="index.html">IRON<span class="bolt">//</span>FORGE</a>
-    <nav class="nav-links">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="products.html" class="active">Products</a>
       <a href="index.html#why">Why Us</a>
